@@ -1,0 +1,36 @@
+{
+	"schemaVersion": 1,
+	"id": "nether-star-extend",
+	"version": "${version}",
+	"name": "nether-star-extend",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"sources": "https://github.com/fauilfd/NsE"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/nether-star-extend/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.fauilfd.nse.Netherstarextend"
+		],
+		"fabric-datagen": [
+			"com.fauilfd.nse.NetherstarextendDataGenerator"
+		]
+	},
+	"mixins": [
+		"nether-star-extend.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
